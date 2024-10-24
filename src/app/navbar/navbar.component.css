@@ -1,0 +1,96 @@
+@media (max-width: 991px) {
+    .desktopnav {
+      display: none;
+    }
+  }
+   
+  .navbar{
+   
+    margin: 0px;
+    padding: 0px;
+   
+    }
+   
+    .submenu {
+      display: none;
+      position: fixed;
+      background-color: rgba(79, 199, 255, 0.786);
+      width: 100%;
+      left: 0;
+      top: 13%;
+      z-index: 1000;
+    }
+   
+    .nav-item:hover .submenu {
+      display: block;
+    }
+   
+    .nav-item a{
+      color: black;
+    }
+    .nav-item a:hover{
+      background-color: rgba(79, 199, 255, 0.786);
+    }
+   
+    .subitem{
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    }
+   
+    .subitem a{
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 600;
+    font-size:large;
+   
+    }
+    .subitem a:hover{
+      color: rgba(79, 199, 255, 0.786);
+    background-color:rgb(255, 255, 255);
+   
+    }
+   
+   
+   
+   
+   
+   
+  /* =====================mobilenav css======== */
+   
+  @media (min-width: 991px) {
+    .mobilenav {
+      display: none;
+    }
+  }
+   
+  .mobilenav {
+    background-color: rgb(255, 255, 255);
+  }
+   
+  .mainwrapper {
+    height: 90%;
+    position: fixed;
+    left: 0;
+    top: 14%;
+    padding: 1rem;
+  }
+  .toggle1 {
+    border: none;
+    margin-left: 10px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 1px 10px 1px 10px;
+  }
+   
+  .nav_wrapper a{
+    color: black;
+  }
+  .nav_wrapper a:hover {
+    background-color: rgb(84, 90, 255);
+    color:rgb(255, 255, 255);
+  }
+   
+   
+   

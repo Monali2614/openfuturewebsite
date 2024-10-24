@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+ 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+ 
+ 
+ 
+</style>
+ 
+ 
+  <div class="desktopnav ">
+    <nav class="navbar navbar-expand-lg fixed-top " style="background-color: aliceblue;">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://www.nityo.com/assets/front/img/logo.svg"
+          class="logo logo-display"
+          alt="Logo"
+          width="150px"
+        />
+      </a>
+ 
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link fw-normal fs-5 py-4" href="#">Home</a>
+          </li>
+ 
+ 
+ 
+          <li class="nav-item">
+            <a class="nav-link fw-normal fs-5 py-4" href="#">
+              About <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <div class="submenu">
+          <div class="subitem">
+            <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="#"><i class="fas fa-book-open"></i> Our Story</a>
+            <a href="#"><i class="fas fa-bullseye"></i> Our Goal</a>
+            <a href="#"><i class="fas fa-users"></i> Our Team</a>
+          </div>
+            </div>
+          </li>
+ 
+          <li class="nav-item">
+            <a class="nav-link fw-normal fs-5 py-4" href="#">
+              Services <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+         <div class="submenu ">
+           <div class="subitem">
+            <a href="#"><i class="fas fa-code"></i> Website Development</a>
+            <a href="#"><i class="fas fa-mobile-alt"></i> Mobile App Development</a>
+            <a href="#"><i class="fas fa-paint-brush"></i> Responsive UI/UX</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> E-commerce Development</a>
+            <a href="#"><i class="fas fa-vial"></i> QA Testing</a>
+            <a href="#"><i class="fas fa-bullhorn"></i> Digital Marketing</a>
+         </div>
+        </div>
+          </li>
+ 
+ 
+ 
+ 
+          <li class="nav-item">
+            <a class="nav-link fw-normal fs-5 py-4" href="#">Our Client</a>
+          </li>
+ 
+          <li class="nav-item">
+            <a class="nav-link fw-normal fs-5 py-4" href="#">Carrier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-normal fs-5 py-4" href="#">Contact Us</a>
+          </li>
+        </ul>
+ 
+ 
+        <div class="navbar-nav">
+          <div class="nav-item d-flex justify-content-center">
+            <div class="text-primary fw-normal p-4"  style="background-color: rgba(79, 199, 255, 0.786); ">
+              <i
+                class="fa fa-search fa-3x"
+                aria-hidden="true"
+                style="color: rgb(252, 252, 252)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <!-- ===================mobilenav================ -->
+ 
+  <div class="mobilenav fixed-top">
+    <div class="d-flex justify-content-between align-items-center">
+      <button class="toggle1" (click)="toggleNav()">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img
+          src="https://www.nityo.com/assets/front/img/logo.svg"
+          class="logo logo-display"
+          alt="Logo"
+          width="170px"
+        />
+      </a>
+      <div class="navbar-nav">
+        <div class="nav-item d-flex justify-content-center">
+          <div class="text-primary fw-normal bg-primary p-4">
+            <i
+              class="fa fa-search fa-3x"
+              aria-hidden="true"
+              style="color: rgb(255, 255, 255)"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Mobile Menu -->
+    <div *ngIf="isVisible" class="mainwrapper bg-light">
+      <!-- initially hidden -->
+      <div class="nav_wrapper bg-light" style="width: 70vw">
+        <a class="nav-link mb-2 fs-5" href="#">Home</a>
+ 
+        <div class="accordion-item mb-2">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button collapsed fs-5 "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne"
+              style="background: none"
+            >
+              About
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+ 
+ 
+                <a class="dropdown-item py-1" href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                  <a class="dropdown-item py-1" href="#"><i class="fas fa-book-open"></i> Our Story</a>
+                   <a class="dropdown-item py-1" href="#"><i class="fas fa-bullseye"></i> Our Goal</a>
+                   <a class="dropdown-item py-1" href="#"><i class="fas fa-users"></i> Our Team</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed fs-5 text-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+              style="background: none"
+            >
+              Services
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <div class="menu-container">
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-code"></i> Website Development</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-mobile-alt"></i> Mobile App Development</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-paint-brush"></i> Responsive UI/UX</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-shopping-cart"></i> E-commerce
+                  Development</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-vial"></i> QA Testing</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-bullhorn"></i> Digital Marketing</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <a class="nav-link mb-2 fs-5" href="#">Contact Us</a>
+        <a class="nav-link mb-2 fs-5" href="#">Our Client</a>
+        <a class="nav-link mb-2 fs-5" href="#">Career</a>
+      </div>
+    </div>
+  </div>
+</html>
+ 
