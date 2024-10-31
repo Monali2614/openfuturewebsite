@@ -1,4 +1,4 @@
-/* General Section */
+
 .about-us-section {
     background-color: #f1f3f7;
     min-height: 100vh; /* Ensure section takes at least full screen height */
@@ -18,7 +18,7 @@
 .about-us-content-wrapper {
     flex: 1; /* Left half of the page */
     position: relative;
-     background-image: url('src/assets/About Us.jpg'); 
+    background-image: url('/src/assets/About Us.jpg'); /* Background image */
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -102,22 +102,22 @@
 .stats-row {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 20px;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 /* Stat Item */
 .stat-item {
-    /* background-image: url('src/assets/images33.jpeg'); */
+    background-image: url('/src/assets/About Us.jpg'); /* Background image */
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    padding: 40px;
+    padding: 60px;
     border-radius: 10px;
     width: calc(33.33% - 20px); /* Adjust for spacing */
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 2px solid blue; /* Blue border around each stat item */
+    border: 6px solid blue; /* Blue border around each stat item */
 }
 
 .stat-item:hover {

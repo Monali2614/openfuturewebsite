@@ -8,9 +8,8 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
 
   isVisible: boolean = false;
- 
   toggleNav() {
     //todo: Toggle the visibility
-    this.isVisible = !this.isVisible;
+    this.isVisible = !this.isVisible;  
   }
 }
